@@ -15,9 +15,11 @@ public class DateTest {
 	public void test() {
 		Calendar c=Calendar.getInstance();
 		c.set(Calendar.DAY_OF_WEEK,1);//调整星期
+		System.out.println("-----------------");
 		
 		SimpleDateFormat df=new SimpleDateFormat("yyyy-MM-dd");
 		String str=df.format(c.getTime());//c.getTime将日历转成日期
+		////////////////////
 		System.out.println(str);
 	}
 	
